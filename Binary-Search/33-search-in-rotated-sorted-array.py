@@ -1,3 +1,6 @@
+# Time: O(log n), Space: O(1)
+# Pattern: Binary Search - rotated sorted
+# Idea: left half sorted if nums[l]<=nums[mid], check target inside
 class Solution(object):
     def search(self, nums, target):
         l=0
@@ -7,7 +10,7 @@ class Solution(object):
             if nums[mid]==target:
                     return mid 
             if nums[l]<=nums[mid]:
-                if nums[l]<=target <nums[mid]:
+                if nums[l]<=target<nums[mid]:
                     h=mid-1
                 else:
                     l=mid+1
