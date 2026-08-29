@@ -1,3 +1,5 @@
+# Time: O(log n), Space: O(1)
+# Pattern: Binary Search - find min in rotated sorted array
 class Solution(object):
     def findMin(self, nums):
         l=0
