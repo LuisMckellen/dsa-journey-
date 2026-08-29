@@ -1,3 +1,6 @@
+# Pattern: Binary Search on Answer
+# Idea: search capacity [max(w), sum(w)], check days needed
+# Time: O(n log sum), Space: O(1)
 class Solution(object):
     def shipWithinDays(self, weights, days):
         l=max(weights)
