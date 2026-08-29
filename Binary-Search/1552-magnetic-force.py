@@ -1,3 +1,6 @@
+# Time: O(n log n), Space: O(1)
+# Pattern: Binary Search on Answer
+# Idea: if can place m balls with dist x increase 
 class Solution:
     def maxDistance(self, position: List[int], m: int) -> int:
         position.sort()
