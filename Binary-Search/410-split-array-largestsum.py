@@ -1,3 +1,6 @@
+# Time: O(n log sum(nums)), Space: O(1)
+# Pattern: Binary Search on Answer
+# Idea: l=max(nums), h=sum(nums), check(mid)=needs <=k subarrays
 class Solution(object):
     def splitArray(self, nums, k):
         l=max(nums)
